@@ -1,0 +1,4 @@
+# The extracted/indexed working tree is retained locally but the repository
+# stores the consolidated archive instead of thousands of individual files.
+Hive-Repository/
+Hive-Development-Logs/
