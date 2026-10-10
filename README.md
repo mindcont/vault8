@@ -17,11 +17,11 @@ Hive 是 CIA 恶意软件基础设施中的隐蔽通信平台，用于让目标�
 
 ## 本地归档
 
-- [Hive-Repository-archive.zip](./Hive-Repository-archive.zip)：按 WikiLeaks 公开索引归档的压缩包。
-- `manifest.csv`：下载来源、文件大小、SHA-256 和状态清单。
-- 下载脚本：[download-vault8.py](./download-vault8.py)。
+- [hive.zip](./hive.zip)：从用户下载的官方 Hive Repository 压缩包，按原始 ZIP 保留，不拆分、不改名、不重新打包。
 
-本次官方索引共发现 2,185 个文件条目，其中 2,172 个成功下载，13 个因站点返回 404、500 或 503 未成功。官方页面展示的 `hive.zip` 下载链接在本次下载时返回 503，因此当前 ZIP 是根据成功获取的公开索引文件生成的归档，不冒充官方 ZIP 原包；缺失项及其错误状态见 `manifest.csv`。
+该 ZIP 内含 `.git` 目录、Git 对象、分支和标签，能够保留官方仓库的历史结构。文件大小为 100,666,724 字节，SHA-256 为 `5DEC53517FCBD5D7F9F2780AD7B7B9CC94092190744EB1F1AA60D4698836AE36`。
+
+此前按网页条目抓取的分散文件和人工生成归档已移除，避免与官方 ZIP 混用。官方网页索引仍显示 2,185 个条目；本仓库现在以单一原始 ZIP 作为 Hive Repository 的唯一数据文件。
 
 ## 文件类型
 
